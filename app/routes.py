@@ -9,7 +9,7 @@ from tools.CeneoScraper.scraper import scraper
 def index():
     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
     # The reloader has already run - do what you want to do here
-
+#123
         if request.method == 'GET':
             dirs = []
             for filename in os.listdir("./opinions/"):
