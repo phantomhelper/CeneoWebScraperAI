@@ -128,7 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# IDE / VScode
+.vscode
+
 # Project
-/app/__pycache__/
-/tools/CeneoScrapper/__pycache__
-/opinions/
+opinions/
+plots/

@@ -1,6 +1,16 @@
-{% extends "base.html.jinja" %}
+{% extends "index_author.html.jinja" %}
 {% block content%}
-        <p>Hello {{name}}!</p>
+        <div class="row align-items-center">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+        <p>My name: {{name}}</p>
         <p>Field: {{field}}</p>
         <p>Group number: {{group}}</p>
-    {% endblock content%}
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+{% endblock content%}
