@@ -37,7 +37,6 @@ def scraper(id=None):
         # product_id = input('Please enter a product\'s id: ')
         product_id = id
 
-
         url = f"https://www.ceneo.pl/{product_id}#tab=reviews"
 
         opinion_elements = {

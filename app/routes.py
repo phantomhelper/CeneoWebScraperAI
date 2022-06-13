@@ -5,6 +5,9 @@ import os
 from flask import render_template, request
 from tools.CeneoScraper.scraper import scraper
 
+if not os.path.exists("opinions"):
+    os.makedirs("opinions")
+
 @app.route('/', methods=['POST', 'GET'])
 def index():
     if os.environ.get("WERKZEUG_RUN_MAIN") == "true":
@@ -21,7 +24,7 @@ def index():
             dirs = []
             for filename in os.listdir("./opinions/"):
                 dirs.append(filename.split(".")[0])
-            return render_template("index.html.jinja", products=dirs, addinfo = "OK")
+            return render_template("index.html.jinja", products=dirs, addinfo = "OK", disinfo="0")
 
 @app.route('/author')
 def author():
